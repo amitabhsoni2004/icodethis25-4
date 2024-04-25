@@ -36,3 +36,8 @@ svgSpan.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
 imgnoElements.forEach(function(imgno) {
     imgno.prepend(svgSpan.cloneNode(true));
 });
+
+let loaderFather = document.querySelector(".loaderFather");
+window.addEventListener("load",()=>{
+    loaderFather.style.display = "none";
+})
